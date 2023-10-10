@@ -2,6 +2,22 @@
 
 This project represents a backend for an application and uses Node.js.
 
+## Content
+
+1. [Instalation](#installation)
+2. [Running](#running)
+
+#### Tests
+
+1. [Add a new post](#add-a-new-post-post---posts)
+2. [Get all posts](#get-all-posts-get---posts)
+3. [Delete a post](#delete-a-post-delete---posts100)
+4. [Edit a Post](#edit-a-post-put---posts1)
+5. [Get all posts where userId is 1](#get-all-posts-where-userid-is-1-get---postsuserid1)
+6. [Get nested data](#get-nested-data-get---posts1comments)
+7. [Patch a post](#patch-a-post-patch---posts1)
+8. [Get post with specific ID](#get-post-with-specific-id-get---posts1)
+
 ## Installation
 
 1. **Node.js, npm and yarn:**
