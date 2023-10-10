@@ -9,14 +9,14 @@ This project represents a backend for an application and uses Node.js. 🚀
 
 #### Tests 🧪
 
-1. [Add a new post](#add-a-new-post-post---posts-✍️) 📝
-2. [Get all posts](#get-all-posts-get---posts-📚) 📖
-3. [Delete a post](#delete-a-post-delete---posts100-🗑️) ❌
-4. [Edit a Post](#edit-a-post-put---posts1-✏️) ✏️
-5. [Get all posts where userId is 1](#get-all-posts-where-userid-is-1-get---postsuserid1-📚) 🧑‍💼
-6. [Get nested data](#get-nested-data-get---posts1comments-🗂️) 🔄
-7. [Patch a post](#patch-a-post-patch---posts1-🛠️) 🛠️
-8. [Get post with specific ID](#get-post-with-specific-id-get---posts1-📚) 🆔
+1. [Add a new post](#add-a-new-post-post---posts) 📝
+2. [Get all posts](#get-all-posts-get---posts) 📖
+3. [Delete a post](#delete-a-post-delete---posts100) ❌
+4. [Edit a Post](#edit-a-post-put---posts1) ✏️
+5. [Get all posts where userId is 1](#get-all-posts-where-userid-is-1-get---postsuserid1) 🧑‍💼
+6. [Get nested data](#get-nested-data-get---posts1comments) 🔄
+7. [Patch a post](#patch-a-post-patch---posts1) 🛠️
+8. [Get post with specific ID](#get-post-with-specific-id-get---posts1) 🆔
 
 ## Installation ⚙️
 
@@ -40,7 +40,7 @@ To run the project, use:
 yarn test
 ```
 
-## Add a New Post (POST -> /posts) ✍️
+## Add a New Post (POST -> /posts)
 
 This feature allows adding a new post to the system through the `POST /posts` endpoint.
 
@@ -98,7 +98,7 @@ The `POST /posts` endpoint allows adding a new post to the system. To use this f
    - Expected:
      - The value of the `userId` field should be 1.
 
-## Get all posts (GET -> /posts) 📚
+## Get all posts (GET -> /posts)
 
 This feature allows fetching all posts from the system through the `GET /posts` endpoint.
 
@@ -132,7 +132,7 @@ The `GET /posts` endpoint allows retrieving all posts from the system.
    - Expected:
      - The length of the response array should be greater than 1.
 
-## Delete a Post (DELETE -> /posts/100) 🗑️
+## Delete a Post (DELETE -> /posts/100)
 
 This feature allows deleting a specific post using the `DELETE /posts/100` endpoint.
 
@@ -150,7 +150,7 @@ The `DELETE /posts/100` endpoint allows deleting a post with the ID 100 from the
    - Expected:
      - HTTP status 200 (OK).
 
-## Edit a Post (PUT -> /posts/1) ✏️
+## Edit a Post (PUT -> /posts/1)
 
 This feature allows editing a specific post using the `PUT /posts/1` endpoint.
 
@@ -208,7 +208,7 @@ The `PUT /posts/1` endpoint allows editing a post with the ID 1 in the system.
    - Expected:
      - The value of the `userId` field should be 1.
 
-## Get all posts where userId is 1 (GET -> /posts?userId=1) 📚
+## Get all posts where userId is 1 (GET -> /posts?userId=1)
 
 This feature allows fetching all posts where the userId is 1 from the system through the `GET /posts?userId=1` endpoint.
 
@@ -250,7 +250,7 @@ The `GET /posts?userId=1` endpoint allows retrieving all posts where the userId 
    - Expected:
      - The `userId` field for all posts should be 1.
 
-## Get nested data (GET -> /posts/1/comments) 🗂️
+## Get nested data (GET -> /posts/1/comments)
 
 This feature allows fetching nested data (comments) for a specific post using the `GET /posts/1/comments` endpoint.
 
@@ -300,7 +300,7 @@ The `GET /posts/1/comments` endpoint allows retrieving comments associated with 
    - Expected:
      - All comments should have a 'body'.
 
-## Patch a Post (PATCH -> /posts/1) 🛠️
+## Patch a Post (PATCH -> /posts/1)
 
 This feature allows partially updating a specific post using the `PATCH /posts/1` endpoint.
 
@@ -358,7 +358,7 @@ The `PATCH /posts/1` endpoint allows updating specific fields of a post with the
    - Expected:
      - The value of the `userId` field should be 1.
 
-## Get post with specific ID (GET -> /posts/1) 📚
+## Get post with specific ID (GET -> /posts/1)
 
 This feature allows fetching a specific post by its ID using the `GET /posts/1` endpoint.
 
