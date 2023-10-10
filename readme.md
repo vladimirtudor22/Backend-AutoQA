@@ -1,24 +1,24 @@
-# Backend Test Project
+# Backend Test Project 😊
 
-This project represents a backend for an application and uses Node.js.
+This project represents a backend for an application and uses Node.js. 🚀
 
-## Content
+## Content 📋
 
 1. [Instalation](#installation)
 2. [Running](#running)
 
-#### Tests
+#### Tests 🧪
 
-1. [Add a new post](#add-a-new-post-post---posts)
-2. [Get all posts](#get-all-posts-get---posts)
-3. [Delete a post](#delete-a-post-delete---posts100)
-4. [Edit a Post](#edit-a-post-put---posts1)
-5. [Get all posts where userId is 1](#get-all-posts-where-userid-is-1-get---postsuserid1)
-6. [Get nested data](#get-nested-data-get---posts1comments)
-7. [Patch a post](#patch-a-post-patch---posts1)
-8. [Get post with specific ID](#get-post-with-specific-id-get---posts1)
+1. [Add a new post](#add-a-new-post-post---posts-✍️) 📝
+2. [Get all posts](#get-all-posts-get---posts-📚) 📖
+3. [Delete a post](#delete-a-post-delete---posts100-🗑️) ❌
+4. [Edit a Post](#edit-a-post-put---posts1-✏️) ✏️
+5. [Get all posts where userId is 1](#get-all-posts-where-userid-is-1-get---postsuserid1-📚) 🧑‍💼
+6. [Get nested data](#get-nested-data-get---posts1comments-🗂️) 🔄
+7. [Patch a post](#patch-a-post-patch---posts1-🛠️) 🛠️
+8. [Get post with specific ID](#get-post-with-specific-id-get---posts1-📚) 🆔
 
-## Installation
+## Installation ⚙️
 
 1. **Node.js, npm and yarn:**
    Ensure that you have Node.js and npm installed on your system. If you don't have them, you can download and install from the [official Node.js website](https://nodejs.org/).
@@ -32,7 +32,7 @@ This project represents a backend for an application and uses Node.js.
    yarn install
    ```
 
-## Running
+## Running 🏃
 
 To run the project, use:
 
@@ -40,17 +40,17 @@ To run the project, use:
 yarn test
 ```
 
-## Add a New Post (POST -> /posts)
+## Add a New Post (POST -> /posts) ✍️
 
 This feature allows adding a new post to the system through the `POST /posts` endpoint.
 
-### Description
+### Description ℹ️
 
 The `POST /posts` endpoint allows adding a new post to the system. To use this feature, send a POST request to the appropriate URL, providing information about the new post.
 
-### Test Plan
+### Test Plan 🧪
 
-1. **Test 1: Check if API responds**
+1. **Test 1: Check if API responds** 🛠️
 
    - Objective: Ensure that you can get a response from the API when making a POST request to add a new post.
    - Actions:
@@ -58,7 +58,7 @@ The `POST /posts` endpoint allows adding a new post to the system. To use this f
    - Expected:
      - HTTP status 201 (Created).
 
-2. **Test 2: Check response format**
+2. **Test 2: Check response format** 📊
 
    - Objective: Ensure that the received response is a valid JSON object.
    - Actions:
@@ -66,7 +66,7 @@ The `POST /posts` endpoint allows adding a new post to the system. To use this f
    - Expected:
      - The response should be a JSON object.
 
-3. **Test 3: Check response ID**
+3. **Test 3: Check response ID** 🆔
 
    - Objective: Ensure that the ID of the added post is greater than or equal to 100.
    - Actions:
@@ -74,7 +74,7 @@ The `POST /posts` endpoint allows adding a new post to the system. To use this f
    - Expected:
      - The value of the `id` field should be greater than or equal to 100.
 
-4. **Test 4: Check response title**
+4. **Test 4: Check response title** 🏷️
 
    - Objective: Ensure that the title of the added post is "placeHolderDemoTest".
    - Actions:
@@ -82,7 +82,7 @@ The `POST /posts` endpoint allows adding a new post to the system. To use this f
    - Expected:
      - The value of the `title` field should be "placeHolderDemoTest".
 
-5. **Test 5: Check response body**
+5. **Test 5: Check response body** 📋
 
    - Objective: Ensure that the body of the added post is "plcaHolderDemoTestBodyTest".
    - Actions:
@@ -90,7 +90,7 @@ The `POST /posts` endpoint allows adding a new post to the system. To use this f
    - Expected:
      - The value of the `body` field should be "plcaHolderDemoTestBodyTest".
 
-6. **Test 6: Check response userID**
+6. **Test 6: Check response userID** 👤
 
    - Objective: Ensure that the userID of the added post is 1.
    - Actions:
@@ -98,17 +98,17 @@ The `POST /posts` endpoint allows adding a new post to the system. To use this f
    - Expected:
      - The value of the `userId` field should be 1.
 
-## Get all posts (GET -> /posts)
+## Get all posts (GET -> /posts) 📚
 
 This feature allows fetching all posts from the system through the `GET /posts` endpoint.
 
-### Description
+### Description ℹ️
 
 The `GET /posts` endpoint allows retrieving all posts from the system.
 
-### Test Plan
+### Test Plan 🧪
 
-1. **Test 1: Fetch data from the API**
+1. **Test 1: Fetch data from the API** 🛠️
 
    - Objective: Verify that data can be fetched from the API by making a GET request to retrieve all posts.
    - Actions:
@@ -116,7 +116,7 @@ The `GET /posts` endpoint allows retrieving all posts from the system.
    - Expected:
      - HTTP status 200 (OK).
 
-2. **Test 2: Check response format**
+2. **Test 2: Check response format** 📊
 
    - Objective: Ensure that the received response is an array (list of posts).
    - Actions:
@@ -124,7 +124,7 @@ The `GET /posts` endpoint allows retrieving all posts from the system.
    - Expected:
      - The response should be an array.
 
-3. **Test 3: Check response length**
+3. **Test 3: Check response length** 📏
 
    - Objective: Ensure that the response contains more than one post.
    - Actions:
@@ -132,17 +132,17 @@ The `GET /posts` endpoint allows retrieving all posts from the system.
    - Expected:
      - The length of the response array should be greater than 1.
 
-## Delete a Post (DELETE -> /posts/100)
+## Delete a Post (DELETE -> /posts/100) 🗑️
 
 This feature allows deleting a specific post using the `DELETE /posts/100` endpoint.
 
-### Description
+### Description ℹ️
 
 The `DELETE /posts/100` endpoint allows deleting a post with the ID 100 from the system.
 
-### Test Plan
+### Test Plan 🧪
 
-1. **Test 1: Check if API responds**
+1. **Test 1: Check if API responds** 🛠️
 
    - Objective: Ensure that you can get a response from the API when making a DELETE request to delete a specific post.
    - Actions:
@@ -150,17 +150,17 @@ The `DELETE /posts/100` endpoint allows deleting a post with the ID 100 from the
    - Expected:
      - HTTP status 200 (OK).
 
-## Edit a Post (PUT -> /posts/1)
+## Edit a Post (PUT -> /posts/1) ✏️
 
 This feature allows editing a specific post using the `PUT /posts/1` endpoint.
 
-### Description
+### Description ℹ️
 
 The `PUT /posts/1` endpoint allows editing a post with the ID 1 in the system.
 
-### Test Plan
+### Test Plan 🧪
 
-1. **Test 1: Check if API responds**
+1. **Test 1: Check if API responds** 🛠️
 
    - Objective: Ensure that you can get a response from the API when making a PUT request to edit a specific post.
    - Actions:
@@ -168,7 +168,7 @@ The `PUT /posts/1` endpoint allows editing a post with the ID 1 in the system.
    - Expected:
      - HTTP status 200 (OK).
 
-2. **Test 2: Check response format**
+2. **Test 2: Check response format** 📊
 
    - Objective: Ensure that the received response is a valid JSON object.
    - Actions:
@@ -176,7 +176,7 @@ The `PUT /posts/1` endpoint allows editing a post with the ID 1 in the system.
    - Expected:
      - The response should be a JSON object.
 
-3. **Test 3: Check post ID**
+3. **Test 3: Check post ID** 🆔
 
    - Objective: Ensure that the ID of the edited post is 1.
    - Actions:
@@ -184,7 +184,7 @@ The `PUT /posts/1` endpoint allows editing a post with the ID 1 in the system.
    - Expected:
      - The value of the `id` field should be 1.
 
-4. **Test 4: Check post title**
+4. **Test 4: Check post title** 🏷️
 
    - Objective: Ensure that the title of the edited post is "EditTitlePlaceholderTest".
    - Actions:
@@ -192,7 +192,7 @@ The `PUT /posts/1` endpoint allows editing a post with the ID 1 in the system.
    - Expected:
      - The value of the `title` field should be "EditTitlePlaceholderTest".
 
-5. **Test 5: Check post body**
+5. **Test 5: Check post body** 📋
 
    - Objective: Ensure that the body of the edited post is "EditBodyPlaceholderTest".
    - Actions:
@@ -200,7 +200,7 @@ The `PUT /posts/1` endpoint allows editing a post with the ID 1 in the system.
    - Expected:
      - The value of the `body` field should be "EditBodyPlaceholderTest".
 
-6. **Test 6: Check user ID**
+6. **Test 6: Check user ID** 👤
 
    - Objective: Ensure that the user ID of the edited post is 1.
    - Actions:
@@ -208,17 +208,17 @@ The `PUT /posts/1` endpoint allows editing a post with the ID 1 in the system.
    - Expected:
      - The value of the `userId` field should be 1.
 
-## Get all posts where userId is 1 (GET -> /posts?userId=1)
+## Get all posts where userId is 1 (GET -> /posts?userId=1) 📚
 
 This feature allows fetching all posts where the userId is 1 from the system through the `GET /posts?userId=1` endpoint.
 
-### Description
+### Description ℹ️
 
 The `GET /posts?userId=1` endpoint allows retrieving all posts where the userId is 1 from the system.
 
-### Test Plan
+### Test Plan 🧪
 
-1. **Test 1: Fetch data from the API**
+1. **Test 1: Fetch data from the API** 🛠️
 
    - Objective: Verify that data can be fetched from the API by making a GET request to retrieve all posts for a specific user.
    - Actions:
@@ -226,7 +226,7 @@ The `GET /posts?userId=1` endpoint allows retrieving all posts where the userId 
    - Expected:
      - HTTP status 200 (OK).
 
-2. **Test 2: Check response format**
+2. **Test 2: Check response format** 📊
 
    - Objective: Ensure that the received response is an array (list of posts).
    - Actions:
@@ -234,7 +234,7 @@ The `GET /posts?userId=1` endpoint allows retrieving all posts where the userId 
    - Expected:
      - The response should be an array.
 
-3. **Test 3: Check response length**
+3. **Test 3: Check response length** 📏
 
    - Objective: Ensure that the response contains more than one post.
    - Actions:
@@ -242,7 +242,7 @@ The `GET /posts?userId=1` endpoint allows retrieving all posts where the userId 
    - Expected:
      - The length of the response array should be greater than 1.
 
-4. **Test 4: Check userId for all posts**
+4. **Test 4: Check userId for all posts** 👤
 
    - Objective: Ensure that all posts have userId equal to 1.
    - Actions:
@@ -250,17 +250,17 @@ The `GET /posts?userId=1` endpoint allows retrieving all posts where the userId 
    - Expected:
      - The `userId` field for all posts should be 1.
 
-## Get nested data (GET -> /posts/1/comments)
+## Get nested data (GET -> /posts/1/comments) 🗂️
 
 This feature allows fetching nested data (comments) for a specific post using the `GET /posts/1/comments` endpoint.
 
-### Description
+### Description ℹ️
 
 The `GET /posts/1/comments` endpoint allows retrieving comments associated with a post with ID 1.
 
-### Test Plan
+### Test Plan 🧪
 
-1. **Test 1: Fetch data from the API**
+1. **Test 1: Fetch data from the API** 🛠️
 
    - Objective: Verify that data can be fetched from the API by making a GET request to retrieve comments for a specific post.
    - Actions:
@@ -268,7 +268,7 @@ The `GET /posts/1/comments` endpoint allows retrieving comments associated with 
    - Expected:
      - HTTP status 200 (OK).
 
-2. **Test 2: Check response format**
+2. **Test 2: Check response format** 📊
 
    - Objective: Ensure that the received response is an array (list of comments).
    - Actions:
@@ -276,7 +276,7 @@ The `GET /posts/1/comments` endpoint allows retrieving comments associated with 
    - Expected:
      - The response should be an array.
 
-3. **Test 3: Check presence of 'name' in all results**
+3. **Test 3: Check presence of 'name' in all results** 👤
 
    - Objective: Ensure that all comments have a 'name'.
    - Actions:
@@ -284,7 +284,7 @@ The `GET /posts/1/comments` endpoint allows retrieving comments associated with 
    - Expected:
      - All comments should have a 'name'.
 
-4. **Test 4: Check presence of 'email' in all results**
+4. **Test 4: Check presence of 'email' in all results** 📧
 
    - Objective: Ensure that all comments have an 'email'.
    - Actions:
@@ -292,7 +292,7 @@ The `GET /posts/1/comments` endpoint allows retrieving comments associated with 
    - Expected:
      - All comments should have an 'email'.
 
-5. **Test 5: Check presence of 'body' in all results**
+5. **Test 5: Check presence of 'body' in all results** 📋
 
    - Objective: Ensure that all comments have a 'body'.
    - Actions:
@@ -300,17 +300,17 @@ The `GET /posts/1/comments` endpoint allows retrieving comments associated with 
    - Expected:
      - All comments should have a 'body'.
 
-## Patch a Post (PATCH -> /posts/1)
+## Patch a Post (PATCH -> /posts/1) 🛠️
 
 This feature allows partially updating a specific post using the `PATCH /posts/1` endpoint.
 
-### Description
+### Description ℹ️
 
 The `PATCH /posts/1` endpoint allows updating specific fields of a post with the ID 1 in the system.
 
-### Test Plan
+### Test Plan 🧪
 
-1. **Test 1: Fetch data from the API**
+1. **Test 1: Fetch data from the API** 🛠️
 
    - Objective: Verify that data can be fetched from the API by making a PATCH request to update a specific post.
    - Actions:
@@ -318,7 +318,7 @@ The `PATCH /posts/1` endpoint allows updating specific fields of a post with the
    - Expected:
      - HTTP status 200 (OK).
 
-2. **Test 2: Check response format**
+2. **Test 2: Check response format** 📊
 
    - Objective: Ensure that the received response is a valid JSON object.
    - Actions:
@@ -326,7 +326,7 @@ The `PATCH /posts/1` endpoint allows updating specific fields of a post with the
    - Expected:
      - The response should be a JSON object.
 
-3. **Test 3: Check post ID**
+3. **Test 3: Check post ID** 🆔
 
    - Objective: Ensure that the ID of the patched post is 1.
    - Actions:
@@ -334,7 +334,7 @@ The `PATCH /posts/1` endpoint allows updating specific fields of a post with the
    - Expected:
      - The value of the `id` field should be 1.
 
-4. **Test 4: Check patched title**
+4. **Test 4: Check patched title** 🏷️
 
    - Objective: Ensure that the title of the patched post is "TestTitlePlaceholder".
    - Actions:
@@ -342,7 +342,7 @@ The `PATCH /posts/1` endpoint allows updating specific fields of a post with the
    - Expected:
      - The value of the `title` field should be "TestTitlePlaceholder".
 
-5. **Test 5: Check patched body**
+5. **Test 5: Check patched body** 📋
 
    - Objective: Ensure that the body of the patched post is the expected value.
    - Actions:
@@ -350,7 +350,7 @@ The `PATCH /posts/1` endpoint allows updating specific fields of a post with the
    - Expected:
      - The value of the `body` field should match the expected patched body.
 
-6. **Test 6: Check user ID**
+6. **Test 6: Check user ID** 👤
 
    - Objective: Ensure that the user ID of the patched post is 1.
    - Actions:
@@ -358,17 +358,17 @@ The `PATCH /posts/1` endpoint allows updating specific fields of a post with the
    - Expected:
      - The value of the `userId` field should be 1.
 
-## Get post with specific ID (GET -> /posts/1)
+## Get post with specific ID (GET -> /posts/1) 📚
 
 This feature allows fetching a specific post by its ID using the `GET /posts/1` endpoint.
 
-### Description
+### Description ℹ️
 
 The `GET /posts/1` endpoint allows retrieving a post with a specific ID from the system.
 
-### Test Plan
+### Test Plan 🧪
 
-1. **Test 1: Fetch data from the API**
+1. **Test 1: Fetch data from the API** 🛠️
 
    - Objective: Verify that data can be fetched from the API by making a GET request to retrieve a post with a specific ID.
    - Actions:
@@ -376,7 +376,7 @@ The `GET /posts/1` endpoint allows retrieving a post with a specific ID from the
    - Expected:
      - HTTP status 200 (OK).
 
-2. **Test 2: Check response format**
+2. **Test 2: Check response format** 📊
 
    - Objective: Ensure that the received response is a valid JSON object.
    - Actions:
@@ -384,7 +384,7 @@ The `GET /posts/1` endpoint allows retrieving a post with a specific ID from the
    - Expected:
      - The response should be a JSON object.
 
-3. **Test 3: Check post ID**
+3. **Test 3: Check post ID** 🆔
 
    - Objective: Ensure that the ID of the fetched post is 1.
    - Actions:
@@ -392,7 +392,7 @@ The `GET /posts/1` endpoint allows retrieving a post with a specific ID from the
    - Expected:
      - The value of the `id` field should be 1.
 
-4. **Test 4: Check presence of title**
+4. **Test 4: Check presence of title** 🏷️
 
    - Objective: Ensure that the fetched post has a title.
    - Actions:
@@ -400,7 +400,7 @@ The `GET /posts/1` endpoint allows retrieving a post with a specific ID from the
    - Expected:
      - The post should have a `title`.
 
-5. **Test 5: Check presence of body**
+5. **Test 5: Check presence of body** 📋
 
    - Objective: Ensure that the fetched post has a body.
    - Actions:
@@ -408,7 +408,7 @@ The `GET /posts/1` endpoint allows retrieving a post with a specific ID from the
    - Expected:
      - The post should have a `body`.
 
-6. **Test 6: Check presence of user ID**
+6. **Test 6: Check presence of user ID** 👤
 
    - Objective: Ensure that the fetched post has a user ID.
    - Actions:
