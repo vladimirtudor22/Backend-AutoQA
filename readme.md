@@ -1,4 +1,4 @@
-# Backend Test Project 😊
+# Backend Test Project
 
 This project represents a backend for an application and uses Node.js. 🚀
 
