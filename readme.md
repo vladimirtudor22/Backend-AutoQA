@@ -4,8 +4,8 @@ This project represents a backend for an application and uses Node.js. 🚀
 
 ## Content 📋
 
-1. [Instalation](#installation)
-2. [Running](#running)
+1. [Instalation](#installation)⚙️
+2. [Running](#running)🏃
 
 #### Tests 🧪
 
@@ -18,7 +18,7 @@ This project represents a backend for an application and uses Node.js. 🚀
 7. [Patch a post](#patch-a-post-patch---posts1) 🛠️
 8. [Get post with specific ID](#get-post-with-specific-id-get---posts1) 🆔
 
-## Installation ⚙️
+## Installation
 
 1. **Node.js, npm and yarn:**
    Ensure that you have Node.js and npm installed on your system. If you don't have them, you can download and install from the [official Node.js website](https://nodejs.org/).
@@ -32,7 +32,7 @@ This project represents a backend for an application and uses Node.js. 🚀
    yarn install
    ```
 
-## Running 🏃
+## Running
 
 To run the project, use:
 
